@@ -1,0 +1,432 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,p{
+    margin: 0;
+}
+.container{
+    width: 1400px;
+    height: 100%;
+    margin: auto;
+}
+header{
+    height: 117px;
+    background-color: black;
+    color: #ffffff;
+    font-size: 28px;
+}
+.head{
+    display: flex;
+}
+.logo{
+    position: relative;
+    padding-left: 28px;
+}
+.logo img{
+    width: 62px;
+    height: 46px;
+    position: absolute;
+    left: -50px;
+    top: 31px;
+}
+.logo p{
+    line-height: 117px;
+}
+.nav{
+    margin-left: auto;
+    line-height: 117px;
+}
+.nav ul {
+    display: block;
+    margin: 0;
+}
+.nav ul li{
+    display: inline-block;
+    margin: 0 22px;
+}
+.nav ul li a:hover{
+    cursor:pointer;
+}
+.nav ul li a{
+    height: 55px;
+    display: block;
+    margin: auto;
+    line-height: 55px;
+}
+main .container{
+    text-align: center;
+}
+main .container>h1,.title h1{
+    padding-top: 85px;
+ }
+ main .container>p,.title p{
+    margin-top:16px ;
+    margin-bottom:96px ;
+}
+.active{
+    background-color: #ffffff;
+    color: #000000;
+    padding:0 24px;
+    border-radius: 30px; 
+}
+.introduce{
+    height: 979px;
+    background-image: url(../img/banner.png);
+    background-size: 100% 100%;
+    color: #ffffff;
+ }
+ .introduce img,.introduce h4{
+     display: none;
+ }
+ .introduce .container{
+    display: flex;
+    align-items: center;
+ }
+ .introduce-text{
+    width: 50%;
+    margin-left: auto;
+    position: relative;
+    top: 6%;
+}
+ .introduce-text h1{
+     text-align: center;
+     font-size: 100px;
+     /* margin-bottom: 150px;
+      */
+      height: 200px;
+ }
+ .introduce-text p{
+     margin-top: 50px;
+     font-size: 22px;
+     line-height: 45px;
+     text-align: left;
+ }
+ .about{
+     height: 839px;
+ }
+.about-text > div{
+    display: flex;
+}
+.about-text > div img{
+    width: 612px;
+    height: 427px;
+    margin-right: 20px;
+}
+.about-text > div p{
+    margin: 0;
+    text-align: left;
+    font-size: 18px;
+    line-height: 44px;
+    text-indent:2em;
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+.advantage{
+    height: 697px;
+    background-image: url(../img/advantage.png);
+    background-size: cover;
+    color: #ffffff;
+}
+.advantage-text{
+    display: flex;
+    justify-content: space-between;
+}
+.advantage-text>div{
+    border: 1px solid #3f4767;
+    width: 230px;
+    height: 298px;
+}
+.advantage-text>div:hover{
+    transition: .5s;
+    background-color: #ffffff;
+    color: #031d5d;
+}
+.advantage-text>div:hover .advantage-icon{
+    background-color: #031d5d;
+}
+.advantage-center{
+    padding:0 31px;
+}
+.advantage-center p{
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+.advantage-icon{
+    width: 85px;
+    height: 85px;
+    margin:10px auto;
+    line-height: 85px;
+    border-radius: 50%;
+}
+.advantage-icon img{
+    height: 46px;
+    vertical-align:middle;
+}
+.contact-us{
+    height: 610px;
+}
+.contact{
+    display: flex;
+    justify-content: space-between;
+}
+.contact p{
+    font-size: 23px;
+    margin-top: 25px;
+}
+.position img{
+    width: 1039px;
+    height: 252px;
+}
+.qa-code img{
+    width: 242px;
+    height: 252px;
+}
+footer{
+    height: 115px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 115px;
+}
+.footer-text{
+    display: flex;
+    justify-content: space-between;
+}
+.address{
+    display: none;
+}
+.side-nav{
+    display: none;
+}
+@media only screen 
+and (min-device-width : 360px) 
+and (max-device-width : 375px){
+    .footer-text{
+        display: block;
+    }
+}
+@media only screen 
+and (min-device-width : 360px) 
+and (max-device-width : 768px){
+    body,.container,.introduce-text,.about-text > div img,.advantage-text>div,.position img{
+        width: 100%;
+    }
+    header,.position p{
+        display: none;
+    }
+    .nav ul{
+        display: block;
+    }
+    .introduce{
+        height: 400px;
+        background-image: url(../img/iphone-banner.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .introduce img,.introduce-text h4,.about-text>div{
+        display: block;
+    }
+    .introduce img{
+        width: 91px;
+        height: 67px;
+        margin:14px auto;
+    }
+    main .about,footer,.contact-us,.introduce-text h1,.advantage-text>div,.position img,.advantage-text>div,.about-text img{
+        height: auto !important;
+    }
+    .introduce-text h1{
+        font-size: 40px;
+        margin-bottom: 42px;
+    }
+    .introduce-text p{
+        display: none;
+    }
+    main .about{
+        margin: 15px;
+        padding:16px;
+        box-shadow: 0px 0px 9px 2px rgba(18, 32, 75, 0.11);
+        border-radius: 5px;
+    }
+    main .container>h1,.title h1{
+        padding-top: 3px;
+        padding-bottom: 10px;
+        font-size: 18px;
+    }
+    main .container>p ,.title p{
+        margin:0 0 15px 0;
+        font-size: 9px;
+    }
+    .about-text > div p{
+        font-size: 11px;
+        line-height: 22px;
+        letter-spacing:2px;
+    }
+    .advantage{
+        background-image: url(../img/iphone-Ad.png);
+        background-size: 100% 137px;
+        background-repeat: no-repeat;
+        height: auto;
+    }
+    .advantage-text{
+        width: 100%;
+        overflow-y: hidden;
+        color: #074195;
+        flex: 0 0 130px;
+    }
+    .advantage-text h3{
+        font-size: 11px;
+    }
+    .advantage-text p{
+        font-size: 8px;
+    }
+    .advantage-text>div{
+        box-shadow: 0px 0px 9px 2px rgba(18, 32, 75, 0.11);
+        border-radius: 5px;
+        border: 0;
+        background-color: #ffffff;
+        flex-grow: 0;
+        flex-shrink: 0;
+        width: 130px;
+        margin:15px 7px;
+    }
+    .advantage-icon{
+        width: 49px;
+        height: 49px;
+        line-height: 49px;
+        background-color:#074195 ;
+    }
+    .advantage-center{
+        padding: 10px 18px;
+    }
+    .advantage-center p{
+        -webkit-line-clamp: 6;
+    }
+    .advantage-icon img{
+        height: 29px;
+    }
+    .title{
+        height: 137px;
+        margin: auto;
+    }
+    .title h1{
+        padding-top: 56px;
+    }
+    .contact{
+        flex-direction: column-reverse;
+        height: 100%;
+    }
+    .qa-code img{
+        width: 141px;
+        height: 148px;
+    }
+    .contact p{
+        font-size: 12px;
+        margin: 12px 0 16px 0;
+    }
+    footer{
+        font-size:9px;
+        padding:12px 15px;
+        line-height: 20px;
+    }
+    footer span{
+        margin: 0 !important;
+        display: block;
+    }
+    .side-nav{
+        display: block;
+        position: fixed;
+        right: 15px;
+        top: 40%;
+        background-color: #fff;
+    }
+    .side-nav ul{
+        padding:  0;
+        margin: 0;
+        width: 53px;
+        color: #000;
+        box-shadow: 0px 0px 9px 2px rgba(18, 32, 75, 0.11);
+    }
+    .side-nav ul li{
+        list-style: none;
+        font-size: 9px;
+        transform: scale(0.9);
+        padding-top: 11px;
+        text-align: center;
+    }
+    .side-nav ul li a{
+        border-bottom: 1px solid #F2F2F2;
+        padding-bottom: 11px;
+    }
+    .side-nav ul li img{
+        height: 22px;
+        width: auto;
+        display: block;
+        margin:auto;
+    }
+    .address{
+        display: block;
+    }
+    }
+    @media only screen 
+    and (min-device-width : 770px) 
+    and (max-device-width : 1024px){
+    body,.position img,.advantage{
+        width: 100%;
+    }
+    .container{
+        width: 95%;
+        margin: auto;
+    }
+    .introduce-text h1{
+        height: auto;
+    }
+    .introduce,.contact-us,.about,.advantage{
+        height: auto;
+        padding-bottom: 50px;
+    }
+    .logo img{
+        left: 50px;
+    }
+    .logo p{
+        display: none;
+    }
+    .nav ul li{
+        margin: 0 5px;
+    }
+    .about-text > div img{
+        width: 529px;
+    }
+    .contact{
+        flex-direction: column-reverse;
+        height: 100%;
+    }
+    .contact p{
+        margin: 10px 0;
+    }
+    .introduce-text h1{
+        font-size: 60px;
+        line-height: 150px;
+    }
+    .introduce-text p{
+        margin: 20px 0;
+    }
+    main .container>h1, .title h1{
+        padding-top: 50px;
+    }
+    main .container>p, .title p{
+        margin-bottom: 50px;
+    }
+    footer{
+        padding:0 10px;
+    }
+}
